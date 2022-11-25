@@ -1,0 +1,40 @@
+---
+interface Props {
+    className?: string;
+}
+
+const { className } = Astro.props;
+const classes = className ? `container ${className}` : 'container';
+---
+
+<style>
+    .container {
+        width: 1080px;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 10px 20px;
+    }
+
+
+    @media all and (min-width: 1201px) and (max-width: 1380px) {
+        .container {
+            width: 900px;
+        }
+    }
+
+    @media all and (min-width: 601px) and (max-width: 1200px) {
+        .container {
+            width: 600px;
+        }
+    }
+
+    @media all and (max-width: 600px) {
+        .container {
+            width: 320px;
+        }
+    }
+</style>
+
+<div class={classes}>
+    <slot />
+</div>

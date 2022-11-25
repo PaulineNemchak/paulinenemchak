@@ -1,0 +1,38 @@
+---
+import '../styles/variables.css';
+import '../styles/global.css';
+import Container from '../components/Container.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+const { pageTitle } = Astro.props;
+---
+
+<style>
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+    }
+</style>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👾</text></svg>"
+    />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <Header />
+    <main>
+        <Container>
+            <slot />
+        </Container>
+    </main>
+    <Footer />
+  </body>
+</html>

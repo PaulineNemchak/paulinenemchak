@@ -1,0 +1,68 @@
+html,
+body {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'M PLUS 1', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    font-size: 18px;
+    background: var(--white);
+    color: var(--purple);
+    overflow-x: hidden;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: var(--purple-light);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: var(--purple-numb);
+}
+
+h1 {
+    font-size: 80px;
+    margin-top: 0;
+    margin-left: -20px;
+    line-height: 1em;
+    text-shadow: -4px 0px var(--bright-pink), -10px 0px var(--yellow);
+}
+
+h3 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 22px;
+}
+
+.visually-hidden:not(:focus):not(:active) {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
+@media all and (max-width: 600px) {
+    .capybara {
+        font-size: 10px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h3  {
+        font-size: 16px;
+    }
+}
