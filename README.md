@@ -4,7 +4,7 @@ i'm a frontend engineer
 pronouns: her/she
 
 <!--
-**PaulineNemchak/PaulineNemchak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**PaulineNemchak/paulinenemchak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
