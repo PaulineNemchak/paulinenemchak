@@ -7,10 +7,9 @@ const { tags } = frontmatter;
 <BaseLayout pageTitle={frontmatter.title}>
     <article>
         <h1>{frontmatter.title}</h1>
-            <p>{frontmatter.pubDate.slice(0,10)}</p>
-            <p><em>{frontmatter.description}</em></p>
-            <img src={frontmatter.image.url} alt={frontmatter.image.alt} width="300" />
-            <slot />
-            <TagList tags={tags} />
+        <p><em>{frontmatter.description}</em></p>
+        <slot />
+        <p>{frontmatter.pubDate.slice(0,10)}</p>
+        <TagList tags={tags} />
     </article>
 </BaseLayout>
