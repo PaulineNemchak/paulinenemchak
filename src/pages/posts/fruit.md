@@ -12,7 +12,7 @@ The problem is that people use the word “fruit” in many ways, which is confu
 The confusion stems from the fact that the same terms are used in botany, but with a different meaning.
 
 <figure>
-  <img alt="Basic plant structure" src="/fruit/fruit.jpg" height="450" />
+  <img alt="Basic plant structure" src="/fruit/fruit.jpg" width="300" />
   <figcaption>Fig.1 - Basic plant structure</figcaption>
 </figure>
 

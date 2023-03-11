@@ -65,6 +65,10 @@ figcaption {
     margin-top: 8px;
 }
 
+img {
+    max-width: 100%;
+}
+
 @media all and (max-width: 600px) {
     .capybara {
         font-size: 10px;
