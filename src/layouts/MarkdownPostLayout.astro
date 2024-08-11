@@ -9,7 +9,6 @@ const date = formatDate(frontmatter.pubDate);
 <BaseLayout pageTitle={frontmatter.title}>
     <article>
         <h1>{frontmatter.title}</h1>
-        <p><em>{frontmatter.description}</em></p>
         <slot />
         <time datetime={frontmatter.pubDate}>{date}</time>
         <TagList tags={tags} />

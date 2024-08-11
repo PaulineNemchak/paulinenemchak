@@ -5,7 +5,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: system-ui, sans-serif; 
-    font-size: 18px;
+    font-size: 22px;
     background: var(--white);
     color: var(--purple);
     overflow-x: hidden;
@@ -29,7 +29,7 @@ a:visited {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 3.25rem;
     margin-top: 0;
     margin-left: -20px;
     line-height: 1em;
@@ -39,11 +39,11 @@ h1 {
 h3 {
     margin-top: 30px;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: 1.5rem;
 }
 
 p {
-    margin: 5px;
+    margin: 0.75rem 0;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -69,15 +69,15 @@ img {
 }
 
 @media all and (max-width: 600px) {
-    .capybara {
-        font-size: 10px;
+    body {
+        font-size: 18px;
     }
 
     h1 {
-        font-size: 50px;
+        font-size: 2rem;
     }
 
     h3  {
-        font-size: 16px;
+        font-size: 1.5rem;
     }
 }
