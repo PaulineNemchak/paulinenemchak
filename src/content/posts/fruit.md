@@ -1,8 +1,7 @@
 ---
-layout: ../../layouts/MarkdownPostLayout.astro
 title: Are tomatoes fruits?
-author: Pauline Nemchak
-pubDate: 11-03-2023
+description: No, tomato is not a fruit.
+pubDate: 2023-03-11
 tags: ["biology"]
 ---
 If you ever being on the internet, you have definitely seen people saying that tomatoes are fruits, not vegetables. But are they really?

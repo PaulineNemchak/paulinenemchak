@@ -1,11 +1,19 @@
 ---
-import BaseLayout from '../../layouts/BaseLayout.astro'
-const allPosts = await Astro.glob('./*.md');
-const pageTitle = "My Astro Learning Blog";
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import { formatDate } from '../../utils/formatDate';
+const allPosts = await getCollection("posts");
+const pageTitle = "Pauline Nemchak's posts";
 ---
 <BaseLayout pageTitle={pageTitle}>
-  <p>This is where I will post about my journey learning Astro.</p>
+  <h1>List of posts:</h1>
   <ul>
-    {allPosts.map((post) => <li><a href={post.url}>{post.frontmatter.title}</a><p>{post.frontmatter.pubDate.slice(0,10)}</p></li>)}
+    {allPosts.map((post) => (
+      <li>
+        <a href={`/posts/${post.slug}/`}>
+          {post.data.title}
+        </a>
+        <p>{formatDate(post.data.pubDate)}</p>
+      </li>))}
   </ul>
 </BaseLayout>

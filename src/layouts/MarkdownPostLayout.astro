@@ -1,15 +1,17 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import TagList from '../components/TagList.astro';
+import { formatDate } from '../utils/formatDate';
 const { frontmatter } = Astro.props;
 const { tags } = frontmatter;
+const date = formatDate(frontmatter.pubDate);
 ---
 <BaseLayout pageTitle={frontmatter.title}>
     <article>
         <h1>{frontmatter.title}</h1>
         <p><em>{frontmatter.description}</em></p>
         <slot />
-        <p>{frontmatter.pubDate.slice(0,10)}</p>
+        <time datetime={frontmatter.pubDate}>{date}</time>
         <TagList tags={tags} />
     </article>
 </BaseLayout>
