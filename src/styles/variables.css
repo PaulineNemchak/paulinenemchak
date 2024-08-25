@@ -1,12 +1,11 @@
 :root {
-    --white: #fff;
-    --purple: #2f2b45;
-    --purple: #2f2b45;
-    --purple-numb: #7b64f0;
-    --purple-light: #c737ff;
-    --yellow: #ffff00;
-    --bright-pink: #ff29f8;
-    --hightlight-color: #07faff;
+    --white: oklch(1 0 0);
+    --purple: oklch(0.31 0.05 290.45);
+    --purple-numb: oklch(0.64 0.22 286.04);
+    --purple-light: oklch(0.6 0.31 311.35);
+    --yellow: oklch(0.97 0.24 110.13);
+    --bright-pink: oklch(0.68 0.33 329.81);
+    --hightlight-color: oklch(0.88 0.18 197.48);
 }
 
 ::selection {
