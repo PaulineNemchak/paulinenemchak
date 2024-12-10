@@ -1,7 +1,7 @@
 ### Hi there 👋
 i'm a frontend engineer
 
-pronouns: her/she
+pronouns: she/they
 
 <!--
 **PaulineNemchak/paulinenemchak** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
